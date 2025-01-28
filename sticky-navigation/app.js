@@ -1,0 +1,11 @@
+const nav =document.querySelector(".nav")
+
+window.addEventListener("scroll",sctickyNavbar) //window คือการ check ผู้ใช้งาน
+
+function sctickyNavbar(){
+    if(window.scrollY>nav.offsetHeight+200){
+        nav.classList.add("active")
+    }else{
+        nav.classList.remove("active")
+    }
+}

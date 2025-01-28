@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 350px;
+}
+
+.title{
+    margin: 0;
+}
+
+.subtitle{
+    display: inline-block;
+    margin: 5px 0 20px; /*บน ซ้ายขวา ล่าง*/
+    opacity: 0.8;
+}
+
+.header{
+    background:#333 ;
+    color: #fff;
+    padding:30px 20px;/*บนล่าง ซ้ายขวา*/
+}
+
+.header input{
+    background: rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius:50px ;
+    color: #fff;
+    font-size: 14px;
+    padding:10px 15px; /*ระยะห่างด้านใน*/
+    width: 100%;
+}
+
+.header input:focus{
+    outline: none;
+}
+
+.county-list{
+    background: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto; /*ถ้ามีเนื้อหาในแนวตั้งจะมี scroll bar ขึ้นมา*/
+}
+
+.county-list li{
+    display: flex;
+    padding: 20px;
+}
+
+.county-list img{
+    border-radius: 50%;
+    object-fit: cover; /* รูปไม่บีบ ไม่พัง ปังง่ายๆ ด้วย Object-fit*/
+    width: 50px;
+    height: 50px;
+}
+
+.county-list .info{
+    margin-left: 10px;
+}
+
+.county-list .info h4{
+    margin: 0 0 10px;
+}
+
+.county-list .info p{
+    font-size: 12px;
+}
+
+.county-list li:not(:last-of-type){/*pesudo :not(:last-of-type) การกำหนดก่อนตัวสุดท้าย*/
+    border-bottom: 1px solid gray;
+
+}
+
+.county-list li.hide{/*hide อยู่ใน li ไม่ต้องเว้นวรรค*/
+    display: none;
+}

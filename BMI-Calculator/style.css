@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*ซ่อนการsrcoll*/
+}
+
+.container{
+    width: 30rem;
+    max-width: 800px;
+    background: #333;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+form{
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+form>*{ /* หมายถึงทุก element ใน form*/
+    padding: 1.2rem;
+}
+
+input,button{/*ใช้2tag พร้อมกันมี , */
+    padding: 0.5rem;
+    width: 100%; /*ทำให้ปุ่มเต็มหน้าจอ และช่อง input*/
+    font-size: 1.5rem;
+}
+
+.btn{
+    background-color: rgb(28, 190, 201);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.result{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.7rem;
+}

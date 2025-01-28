@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #333;
+    display: flex;
+    flex-wrap: wrap;/*flex-wrap: เป็นการกำหนดว่าจะให้ Flex Item ภายใน Flex Container , wrap: การกำหนดให้ Flex Item มีการดันลงมาด้านล่างตามขนาดของ Flex Container โดยมีการจัดเรียง Flex Item จากบนลงล่าง*/
+    align-items: center;/*เป็นการกำหนดการจัดตำแหน่งของ Flex Item ในแนวตั้ง ภายใน Flex Container*/
+    justify-content: center;/*เป็นการกำหนดการจัดตำแหน่งของ Flex Item ภายใน Flex Container*/
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;/*ไม่มีการ scroll ทั้งแนวตั้งแล้วก็แนวนอน*/
+    margin: 0;
+}
+
+.btn{
+    background: white;
+    border: 5px;
+    border: none;
+    margin: 5rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}

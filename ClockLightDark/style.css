@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#000;
+    --seacondy-color:#ffff;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /*การซ่อน scroll*/
+    margin: 0;
+}
+
+.time{
+    font-size: 60px;
+}
+
+.toggle{
+    cursor: pointer;
+    background :var(--primary-color);
+    color:var(--seacondy-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 550px;
+}
+
+html.dark{
+    --primary-color:#ffff;
+    --seacondy-color:#333;
+}
+
+html.dark{
+    background-color: #111;
+    color: var(--primary-color);
+}
+
+html{
+    transition: all 0.5s ease-in;
+}

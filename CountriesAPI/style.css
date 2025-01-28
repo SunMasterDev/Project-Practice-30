@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right,#d4d3dd,#efefbb); /* คือการไล่สีจากสีหนึ่งไปตามแนวนอน สีที่ผสมกัน */
+    display: flex;
+    flex-direction: column;/*ช้กำหนดทิศทางหลักของ flex items ที่อยู่ภายใน flex container*/
+    align-items: center;
+    justify-content: center;
+    margin: 0;/*นอก*/
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;/*wrap ถ้าเนื้อหาเกินจะปัดลงไปข้างล่าง*/
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.country{
+    background: #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.country .img-container{ /*อยู่ภายใน class ต้องเว้นวรรค*/
+    width:120px ;
+    height: 120px;
+    text-align: center;
+}
+
+.country .img-container img{
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+.country .info{
+    margin-top: 20px;
+}
+
+.country:hover{
+    transform: translateY(5px);
+}
+

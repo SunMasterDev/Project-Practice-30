@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;/* min-height ก็คือ สูงอย่างน้อย? */
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;/*wrap: ดัน flex item ลงด่านล่าง*/
+    max-width: 1000px;
+}
+
+.container img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;/*ทำให้รูปภาพไม่บีบอัดพัง*/
+    margin: 10px;
+    max-width: 100%;
+}
+
+.container img:hover{
+    transform: scale(0.98); /*ลดขยายรูปภาพ*/
+}
